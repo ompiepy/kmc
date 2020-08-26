@@ -1,0 +1,18 @@
+Function ConCat(Delimiter As Variant, ParamArray CellRanges() As Variant) As String
+
+    Dim Cell As Range, Area As Variant
+
+    If IsMissing(Delimiter) Then Delimiter = ""
+
+    For Each Area In CellRanges
+        If TypeName(Area) = "Range" Then
+            For Each Cell In Area
+                If Len(Cell.Value) Then ConCat = ConCat & Delimiter & Cell.Value
+            Next
+        Else
+            ConCat = ConCat & Delimiter & Area
+        End If
+    Next
+
+    ConCat = Mid(ConCat, Len(Delimiter) + 1)
+End Function
