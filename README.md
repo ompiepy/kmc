@@ -39,4 +39,4 @@ If you want to pursue the personal.xls file route, and you don't now have one, y
 <br>
 https://office.microsoft.com/en-us/excel-help/deploy-your-excel-macros-from-a-central-file-HA001087296.aspx<br>
 <h3>Disadvantage:</h3><br>
-1. You need as macro-enabled spreadsheet(.xlsm)<br>
+1. You need to save your spreedsheet as a  macro-enabled spreadsheet(.xlsm)<br>
