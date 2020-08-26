@@ -1,0 +1,4 @@
+Function TripCount(r As Range, s As String) As Integer
+   TripCount = 0
+   If Not r.Find(s) Is Nothing Then TripCount = r.Find(s).MergeArea.Cells.Count
+End Function
