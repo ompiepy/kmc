@@ -3,7 +3,7 @@
 <b>1. ConCat UDF (user defined function)</b><br>
 Contributed by Rick Rothstein<br>
 https://www.contextures.com/rickrothsteinexcelvbatext.html#About<br>
-<br>
+<br><!--reduce line height-->
 Syntax:<br>
 =ConCat("delimiter",A1:A3,C1,"HELLO",D1:D2<br>
 <br>
