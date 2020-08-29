@@ -5,7 +5,7 @@ Contributed by Rick Rothstein<br>
 https://www.contextures.com/rickrothsteinexcelvbatext.html#About<br>
 <br><!--reduce line height-->
 Syntax:<br>
-=ConCat("delimiter",["text"],[number],[cellLocation],[cellRanges])A1:A3,C1,"HELLO",D1:D2<br>
+=ConCat("delimiter",["text"],[number],[cellLocation],[cellRanges])<br>
 <br>
 Examples:<br>
 =ConCat("",A1:A3,C1,"HELLO",D1:D2)  //delimiter-empty string<br>
