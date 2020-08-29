@@ -21,7 +21,7 @@ Syntax:<br>
 <p>
 =TripCount(CellRangeToLook,"whatToLook")
   
-Examples:
+Examples:<br>
 =TripCount(A1:AE1,"Trip")
 
 
