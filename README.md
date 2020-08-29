@@ -18,9 +18,14 @@ https://answers.microsoft.com/en-us/msoffice/forum/all/excel-find-number-of-cell
 https://answers.microsoft.com/en-us/profile/20889d9c-421e-4290-8bef-0de4837323b3?sort=LastReplyDate&dir=Desc&tab=Threads&forum=allcategories&meta=&status=&mod=&advFil=&postedAfter=undefined&postedBefore=undefined&threadType=All&page=1<br>
 <br>
 Syntax:<br>
-=TripCount(A1:AE1,"Trip")<br>
-<br>
-<br>
+<p>
+=TripCount(CellRangeToLook,"whatToLook")
+  
+Examples:
+=TripCount(A1:AE1,"Trip")
+
+
+</p>
 <h3>Steps to Install UDF in your workbook.(Will not work in other workbooks)</h3>
 1. Press Alt+F11 to go into the VB editor.<br>
 2. Click Insert->Module from its menu bar.<br>
