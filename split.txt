@@ -1,0 +1,33 @@
+https://www.extendoffice.com/documents/excel/628-excel-split-workbook.html
+
+Split A Workbook To Separate Excel Files With VBA Code
+
+The following VBA code can help you quickly split multiple worksheets of current workbook to separate Excel files, please do as follows:
+
+1. Create a new folder for the workbook that you want to split, because the split Excel files will be stayed at the same folder as this master workbook.
+
+2. Hold down the ALT + F11 keys in Excel, and it opens the Microsoft Visual Basic for Applications window.
+
+3. Click Insert > Module, and paste the following code in the Module Window.
+
+VBA: Split a workbook into multiple workbooks and save in the same folder
+-------------------------------------------------------------------------------
+Sub Splitbook()
+'Updateby20140612
+Dim xPath As String
+xPath = Application.ActiveWorkbook.Path
+Application.ScreenUpdating = False
+Application.DisplayAlerts = False
+For Each xWs In ThisWorkbook.Sheets
+    xWs.Copy
+    Application.ActiveWorkbook.SaveAs Filename:=xPath & "\" & xWs.Name & ".xlsx"
+    Application.ActiveWorkbook.Close False
+Next
+Application.DisplayAlerts = True
+Application.ScreenUpdating = True
+End Sub
+-------------------------------------------------------------------------------
+
+4. Press the F5 key to run this code. And the workbook is split to separate Excel files in the same folder with the original workbook. See screenshot:
+
+Note: If one of the sheets has the same name with the workbook, this VBA cannot work.
